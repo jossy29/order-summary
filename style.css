@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f5f7ff;
+    min-height: 706px;
+    padding: 6% 4%;
+}
+
+.hero {
+    min-height: 330px;
+    min-height: 573px;
+    max-width: 390px;
+    max-height: 609px;
+    margin-bottom: 1.2rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero__image img {
+    width: 100%;
+    min-height: 164px;
+}
+
+.hero__text {
+    padding: 2.3rem 1.5rem 2.1rem;
+}
+
+.header h1 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.header {
+    margin-bottom: 1.6rem;
+}
+
+.header p {
+    text-align: center;
+    line-height: 1.7rem;
+    color: #1f2f56;
+    padding: 0 1%;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f7ff;
+    border-radius: 0.7rem;
+    padding: 0.6rem;
+    margin-bottom: 1.4rem;
+}
+
+.price__left {
+    display: flex;
+}
+
+.price__left h2 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+}
+
+.price__left p {
+    font-size: 0.9rem;
+    color: #1f2f56;
+}
+
+.price__left img {
+    width: 3rem;
+    margin-right: 1.1rem;
+}
+
+.price  a {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #3829e0;
+    cursor: pointer;
+}
+
+button {
+    padding: 1rem 4rem;
+    font-weight: 700;
+    color: #f5f7ff;
+    display: inline;
+    width: 100%;
+    background-color: #3829e0;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    box-shadow: -9px 17px 21px 0px rgba(224,232,255,0.51);
+}
+
+.order {
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    color: #7280a7
+}
+
+.order:active {
+    color: #1f2f56;
+}
+
+@media (min-width: 576px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+          max-width: 1440px; 
+    }
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
