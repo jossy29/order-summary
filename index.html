@@ -2,56 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Order summary card</title>
-  
-  <link rel="stylesheet" href="style.css">
-
+  <title>Frontend Mentor | [Challenge Name Here]</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
- 
-
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
 </head>
+
 <body>
-    <section class="hero">
-      <div class="hero__image">
-        <img src="./images/illustration-hero.svg" alt="illustration hero image">
-      </div>
-      <div class="hero__text">
-      <header class="header">
-          <h1>
-            Order Summary
-          </h1>
-          <p>
-            You can now listen to millions of songs, audiobooks, and podcasts on any 
-            device anywhere you like!
-          </p>
-        </header>
-        <section class="price">
-          <div class="price__left">
-            <img src="./images/icon-music.svg" alt="icon music image">
-            <div>
-              <h2>Annual Plan</h2>
-              <p>$59.99/year</p>
-            </div>
+  <main>
+    <section id="testimonial-container">
+      <div class="main-left">
+        <div class="top">
+          <div class="testimonial-1 grid-item">
+            <header class="header">
+              <img src="./images/image-daniel.jpg" alt="daniel profile picture">
+              <div class="header-text">
+                <h2>Daniel Clifford</h2>
+                <p>Verified Graduate</p>
+              </div>
+            </header>
+            <img id="image" src="./images/bg-pattern-quotation.svg" alt="quotation">
+            <h3>
+              I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+              in the company I joined. I honestly feel I got every penny’s worth.
+            </h3>
+            <p>
+              “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+              transition and have heard some people who had an amazing experience here. I signed up 
+              for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+              The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+              the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+            </p>
+        </div>
+          <div class="testimonial-2 grid-item">
+            <header  class="header">
+              <img src="./images/image-jonathan.jpg" alt="Jonathan Walters profile picture">
+              <div class="header-text">
+                <h2>Jonathan Walters</h2>
+                <p> Verified Graduate</p>
+              </div>
+            </header>
+            <h3>
+              The team was very supportive and kept me motivated
+            </h3>
+            <p>
+              “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+              for a big company. This was one of the best investments I’ve made in myself. ”
+            </p>
           </div>
-          <a href="#">Change</a>          
-        </section>
-        <button>Proceed to Payment</button>
-        <h3 class="order">Cancel Order</h3>
+        </div>
+        <div class="bottom">
+          <div class="testimonial-3 grid-item">
+            <header class="header">
+              <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon profile picture">
+              <div class="header-text">
+                <h2>Jeanette Harmon</h2>
+                <p>Verified Graduate</p>
+              </div>
+            </header>
+            <h3>
+              An overall wonderful and rewarding experience
+            </h3>
+            <p>
+              “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+                while doing something I love. ”
+            </p>
+          </div>
+          <div class="testimonial-4 grid-item">
+            <header class="header">
+              <img src="./images/image-patrick.jpg" alt="Patrick Abrams profile picture">
+              <div class="header-text">
+                <h2>Patrick Abrams</h2>
+                <p>Verified Graduate</p>
+              </div>
+            </header>
+            <h3>
+              Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+              learning from their experiences was easy.
+            </h3>
+            <p>
+              “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+              gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+              junior developer. The standard is above the rest. You will get the personal attention you need from 
+              an incredible community of smart and amazing people. ”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-5 grid-item">
+        <header class="header">
+          <img src="./images/image-kira.jpg" alt="Kira Whittle profile picture">
+          <div class="header-text">
+            <h2>Kira Whittle</h2>
+            <p>Verified Graduate</p>
+          </div>
+        </header>
+        <h3>
+          Such a life-changing experience. Highly recommended!
+        </h3>
+        <p>
+          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+          professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+          student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+          did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+          project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+          could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+          experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+          100% recommend! ”
+        </p>
       </div>
     </section>
-     
-    <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/jossy29/order-summary">Ejim Joseph</a>.
-    </footer>
+  </main>
   
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/jossy29/frontendmentor-Result-1" target="_blank">Ejim Joseph</a>.
+  </footer>
 </body>
 </html>
