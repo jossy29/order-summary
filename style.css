@@ -2,172 +2,146 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px;
-}
-
-main {
-    min-height: 100vh;
-    background-color:  #ecf2f8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#testimonial-container {
-    min-height: 80vh;
-    margin: 30px 45px;
-    min-width: 375px;
-}
-
-.grid-item {
-    padding: 30px 45px 25px;
-    margin-bottom: 20px;
-    border-radius: 1rem;
-    box-shadow: 37px 23px 27px -28px rgba(0,0,0,0.24);
-}
-
-.testimonial-1 {
-    background-color:  #7541c8;
-    color: #ffffff;
-    position: relative;
-    z-index: 0;
-}
-
-.testimonial-1 .header img {
-    border: 2px solid #48556a;
-} 
-
-.testimonial-2 {
-    background-color: #48556a;
-    color: #ffffff;
-}
-
-.testimonial-2 .header img {
-    border: 2px solid;
-} 
-
-.testimonial-3 {
-    background-color: #ffffff;
-}
-
-.testimonial-3 .header img {
-    border: 2px solid #ffffff; 
-} 
-
-.testimonial-4 {
-    background-color: #19212e;
-    color: #ffffff;
-}
-
-.testimonial-4 .header img {
-    border: 2px solid #7541c8;
-}
-
-.testimonial-5 {
-    background-color: #ffffff;
-}
-
-.testimonial-5 .header img {
-    border: 2px solid #ffffff;
-} 
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    z-index: 3;
-    position: relative;
-}
-
-.header img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-
-.header-text {
-    flex-basis: 90%;
-    padding-left: 15px;
-}
-
-.header h2 {
-    margin-bottom: 3px;
-    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
 }
 
-.header p {
-    opacity: 50%;
+body {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 4%;
+
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f5f7ff;  
 }
 
-.grid-item h3 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 2.1rem;
-    margin-bottom: 20px;
-    z-index: 2;
+.card_hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 1.2rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.grid-item p {
-    color: #cfcfcf;
-    opacity: 70%;
-    line-height: 2rem;
+.hero img {
+    width: 100%;
+    max-width: 450px;
+    /* min-height: 164px; */
 }
 
-#image {
-    height: 8rem;
-    position: absolute;
-    top: 8px;
-    right: 30px;
-    z-index: -1;
+.card_content {
+    padding: 2.3rem 1.5rem 2.1rem;
+}
+
+.card_title {
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.card_description {
+    text-align: center;
+    line-height: 1.7rem;
+    color: #1f2f56;
+    padding: 0 5%;
+}
+
+.card_plan {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f7ff;
+    border-radius: 0.7rem;
+    padding: 0.6rem;
+    margin-bottom: 1.4rem;
+}
+
+.card_resume {
+    display: flex;
+}
+
+.card_type {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+}
+
+.card_price {
+    font-size: 0.9rem;
+    color: #1f2f56;
+}
+
+.card_icon {
+    width: 3rem;
+    margin-right: 1.1rem;
+}
+
+.card_plan a {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #3829e0;
+    cursor: pointer;
+}
+
+.card_plan a:active {
+    color: #766cf1;
+}
+
+.btn_primary {
+    padding: 1rem 4rem;
+    font-weight: 700;
+    color: #f5f7ff;
+    display: inline;
+    width: 100%;
+    background-color: #3829e0;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    box-shadow: -9px 17px 21px 0px rgba(224,232,255,0.51);
+}
+
+.btn_primary:active {
+    background-color: #766cf1;
+}
+
+.btn_secondary {
+    text-decoration: none;
+    margin-left: 40%;
+    font-weight: 700;
+    cursor: pointer;
+    color: #7280a7;
+}
+
+.btn_secondary:active {
+    color: #1f2f56;
 }
 
 @media (min-width: 576px) {
-    .grid-item h3{
-        font-size: 17px;
-    }
-
-    #testimonial-container {
-        display: flex;
-        width: 80%;
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
         max-width: 1440px; 
     }
 
-    .top, .bottom  {
-        display: flex;
-        flex-basis: 50%;
-    }
-
-    .main-left {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 76%;
-        margin-right: 20px;
-    }
-
-    .testimonial-5 {
-        flex-basis: 24%;
-    }
-
-    .testimonial-1, .testimonial-3 {
-        margin-right: 20px;
-    }
-
-    .testimonial-1, .testimonial-4 {
-        flex-basis: 70%;
-    }
-
-    .testimonial-3, .testimonial-2 {
-        flex-basis: 30%;
-    }
-
-    #image {
-        top: 8px;
-        right: 90px;
-    }
 }
+
+
+
 
 
 .attribution { font-size: 11px; text-align: center; }
